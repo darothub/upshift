@@ -2,14 +2,44 @@ body{
     margin: 0;
     padding: 0;
     background-color: rgb(245, 245, 247);
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                                    "space space space"
+                                    "content content content";
 }
+
 
 img{
     width: 90px;
     margin-top: 5px;
 }
 
-
+nav{
+    grid-area: nav;
+}
+.space{
+    grid-area: space;
+    height: 150px;
+}
+.content-wrapper{
+    grid-area: content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 200px;
+}
+.content-left{
+    margin-left: 7%;
+}
+.bold{
+    font-size: 50px;
+    line-height: 1em;
+    font-weight: 400;
+}
+#small{
+    font-size: 16px;
+    margin-top: 50px;
+}
 nav ul{
     width: 100%;
 }
@@ -61,4 +91,64 @@ nav ul li{
 a{
     color: grey;
     font-size: 14px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+}
+input:focus{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.input{
+    display: inline-block;
+    border-bottom: 1px solid lightgray;
+    width: 220px;
+    height: 70px;
+    padding: 22px 0;
+}
+
+::placeholder{
+    color: rgb(186, 187, 198)
+}
+.search{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(114, 115, 142);
+    border-radius: 140px;
+    margin-left: 30px;
+    text-align: center;
+}
+.search a{
+    color: #fff;
+    font-size: 16px;
+    line-height: 3em;
+    text-decoration: none;
+    display: block;
+
+}
+
+.content-right{
+
+    width: 250px;
+    height: 250px;
+ 
+}
+
+.lines{
+    display: inline-block;
+    width: 110%;
+    background-color: rgb(186, 187, 198);
+}
+#line1{
+   
+    transform: rotate(45deg) translateY(87px) translateX(70px);
+}
+#line2{
+
+    transform: rotate(-45deg) translateY(40px) translateX(-60px);
 }
