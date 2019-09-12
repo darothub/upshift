@@ -283,6 +283,7 @@ input:focus{
     font-size: 12px;
     margin-left: 5px;
     margin-top: 25px; 
+  
 }
 .checked{
     color: #fff;
@@ -304,6 +305,7 @@ input:focus{
     margin-left: 50px;
     margin-top: -5px;
     font-size: 15px;
+    color: #72738e;
 
 }
 .banners-two-right{
