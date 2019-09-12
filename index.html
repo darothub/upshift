@@ -21,21 +21,21 @@
 </head>
 <body>
 <section class="wrapper">
-    <nav class="navbar container">
+    <nav id="navbar" class="navbar container">
         <ul>
             <div class="navlist">
                 <li id="img"><img class="img" src="./images/upshift.png"/></li>
-                <span class="wrapperspan">
+                <span class="spanpb" style="display: inline-block">
                     <div class="circle"></div><li><a id="personal" class="nav-link" href="#">Personal</a></li>
                     <div id="circle2" class="circle"></div><li><a class="nav-link" href="#">Business</a></li>
                 </span>
-                <span class="contactspan">
+                <span class="contactspan" style="display: inline-block">
                     <li><a class="nav-link" href="#">About</a></li>
                     <li><a class="nav-link" href="#">Pricing</a></li>
                     <li><a class="nav-link" href="#">FAQ</a></li>
                     <li><a  class="nav-link" href="#">Contact Us</a></li>
                 </span>
-                <span class="loginspan">
+                <span class="loginspan" style="display: inline-block">
                     <li><a class="nav-link" href="#">Log In</a></li>
                     <div id="join"><li><a class="nav-link" href="#">Join now</a></li></div>
                 </span>
@@ -43,11 +43,16 @@
         </ul>
     </nav>
     <section class="space"></section>
-    <section class="content-wrapper container">
+    <section class="content-wrapper container ">
         <div class="content-left">
-            <p class="lead bold">Just drive.<br>We'll do the rest.</p>
-            <p id="small" class="lead small">All-inclusive, usage-based car subscriptions.</p>
-            <div class="input"><input type="text" placeholder="Phone number..."/></div> <div class="search"><a href="#">Search</a></div>
+            <div class="content-left-text">
+                <p class="lead bold">Just drive.<br> We'll do the rest.</p>
+                <p id="small" class="lead small">All-inclusive, usage-based car subscriptions.</p>
+            </div>
+            <div class="content-left-search">
+                <div class="input"><input type="text" placeholder="Phone number..."/></div> 
+                <div class="search"><a href="#">Get Started</a></div>
+            </div>
         </div>
         <div class="content-right">
             <hr class="lines" id="line1">
@@ -79,36 +84,72 @@
 
 </section>
 <section class="banners-two container">
-    <div class="banners-two-line">
-        <div class="lines-wrapper">
-            <!-- <hr class="lines2" id="line3">
-            <hr class="lines2" id="line4"> -->
-            <div class="lines2" id="line3"></div>
-            <div class="lines2" id="line4"></div>
-        </div>
-    </div>
-    <div class="testimony">
-        <div id="text-line"></div>
-        <p class="lead">
-            "Since becoming a monthly subscriber, I feel like<br> I have my car
-            back again. It's like I own a car without<br>
-            the worries or cost of keeping it around all the time."
-        </p>
-        <div id="rating">
-            <div id="stars">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
+    <div class="banners-two-left">    
+        <div class="banners-two-line">
+            <div class="lines-wrapper">
+                <!-- <hr class="lines2" id="line3">
+                <hr class="lines2" id="line4"> -->
+                <div class="lines2" id="line3"></div>
+                <div class="lines2" id="line4"></div>
             </div>
-            <P>28 reviews at Yelp</P>
         </div>
-        <div id="name">
-            <diV id="x">x</diV><div></div><p>SAM R.</p></div>
+        <div class="testimony">
+            <div id="text-line"></div>
+            <p class="lead">
+                "Since becoming a monthly subscriber, I feel like<br> I have my car
+                back again. It's like I own a car without<br>
+                the worries or cost of keeping it around all the time."
+            </p>
+            <div id="rating">
+                <div id="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <P>28 reviews at Yelp</P>
+            </div>
+            <div id="name">
+                <diV id="x">x</diV>
+                <div><p>SAM R.</p></div>
+            </div>
         </div>
-
     </div>
+    <div class="banners-two-right">
+            <div class="bt-wrapper">
+                <div class="bt-title">
+                    <p class="lead">01 <span id="bt-title-line" style="display: inline-block;"></span> ABOUT US </p>
+                </div>
+                <div class="bt-header">
+                    <p class="lead">Let's make cities better</p>
+                </div>
+                <div class="desc-text">
+                    <p class="lead">
+                        Upshift is like having your own car at your doorstep, but only
+                        the days you want it. Monthly plans based on how much you
+                        drive that include parking, insurance, maintenance and more. 
+                    </p>
+                    <p class="lead">
+                        We believe in using business to drive positive change in the
+                        world and never setting for what worked in the past.
+                    </p>
+                    <hr class="h">
+                    <div id="name2">
+                        <diV id="x2" style="display: inline-block"><p>x</p></diV>
+                        <div id="name2-p" style="display: inline-block">
+                            <p class="lead">
+                                Interested in our values?
+                            </p>
+                            <p class="lead">
+                                Learn more about the company &rarr;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
 </section>
 </body>
 </html>
