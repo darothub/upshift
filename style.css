@@ -39,6 +39,71 @@ nav .ul li{
         color: grey;
 
     }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-wrapper{
+        display: flex;
+    }
+    .content-right{
+        display: none;
+    }
+    .content-left{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+      
+    }
+    .bold{
+          font-size: 28px;
+    }
+    #small{
+        font-size: 14px;
+    }
+
+    .input input{
+        width: 100%;
+        height: 40px;
+        border: none;
+        background-color: transparent;
+    }
+    input:focus{
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+    .input{
+        display: inline-block;
+        border-bottom: 1px solid lightgray;
+        width: 220px;
+        height: 70px;
+        padding: 22px 0;
+    }
+
+    ::placeholder{
+        color: rgb(186, 187, 198);
+        text-align: center;
+    }
+    .search{
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        background-color: rgb(114, 115, 142);
+        border-radius: 140px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .search a{
+        color: #fff;
+        font-size: 16px;
+        line-height: 3em;
+        text-decoration: none;
+        display: block;
+
+    }
+
 @media only screen and (min-width: 768px) {
     body{
     background-color: #fff;
