@@ -259,7 +259,7 @@ nav .ul li{
     }
     .search{
         display: inline-block;
-        width: 150px;
+        width: 230px;
         height: 50px;
         background-color: rgb(114, 115, 142);
         border-radius: 140px;
@@ -447,8 +447,8 @@ nav .ul li{
         display: grid;
         justify-content: center;
         align-items: center;
-        /* flex: 1;
-        order: 1; */
+        flex: 1;
+        margin-top: 20px;
     }
     .bt-title{
         width: 400px;
@@ -515,53 +515,65 @@ nav .ul li{
     }
     .how{
         display: flex;
-        margin-top: 130px;
+        margin-top: 60px;
         justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
         /* display: grid;
         grid-gap: 100px; */
     }
     .how-div{
         flex-basis: 30%;
+         
     }
     #how-t-work-left{
-        width: 250px;
+        width: 450px;
+        margin: 0 auto;
+        /* background-color: red; */
+        
+       
     }
 
     #how-t-work-mid{
-        width: 350px;
-        margin-left: -5px;
+        width: 450px;
+        margin: 10px auto;
+        
     }
     #check-text{
         margin-top: 10px;
         margin-left: -150px;
     }
     #how-t-work-mid hr{
-        width: 330px;
+        width: 400px;
         margin-left: 0px;
     }
 
     #how-t-work-right{
-        width: 350px;
-        margin-left: 0px;
+        width: 450px;
+        margin: 25px auto;
 
     }
 
     #faq-text{
         margin-top: 10px;
-        margin-left: -150px;
+        
     }
     .process{
-        display: grid;
-        grid-gap: 5px;
+        /* display: grid;
+        grid-gap: 5px; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     .pfirst-wrapper{
         width: 250px;
         height: auto;
-        display: grid;
+        /* display: grid; */
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
+        margin: 40px auto;
     }
 
     .process-first{
@@ -571,67 +583,68 @@ nav .ul li{
         align-items: center;
     }
     .pfirst-circle-wrapper{
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 30px;
         margin: 0 auto;
-        background-color: white;
     }
     .process-first .x2{
         grid-column: 3/5;
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
         background-color: #e7e8eb;
     }
 
     .process-first .x2 p{
-        line-height: 3.3em;
-        font-size: 18px;
+        line-height: 2em;
+        font-size: 12px;
     }
     .pfirst-text{
-        font-size: 18px;
-        margin: 10px auto;
+        font-size: 13px;
         text-align: center;
     }
     .pfirst-text p:nth-child(2){
-        font-size: 14px;
+        font-size: 13px;
         text-align: center;
     }
     .pfirst-text p:nth-child(1){
-    margin-top: 30px;
+        margin-top: 5px;
     }
 
-    .auto-fit {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
+    /* .auto-fit {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    } */
     .process>div:nth-child(4){
         transform: rotate(-15deg);
         position: relative;
         top: 100px;
         left: -50px;
+        
     }
     .process>div:nth-child(2){
         position: relative;
         top: 50px;
     }
+ 
 
-
+/* 
     .process>div:nth-child(3){
         margin-top: 50px;
         margin-left: -90px;
-    }
-    .process>div:nth-child(5){
+    } */
+    /* .process>div:nth-child(5){
         margin-top: 20px;
         margin-left: -150px;
-    }
+    } */
     .process>div:nth-child(6){
         position: relative;
         top: 50px;
         left: -100px;
     }
-    .process>div:nth-child(7){
+    /* .process>div:nth-child(7){
         margin-top: 40px;
         margin-left: -200px;
-    }
+    } */
 
     .curve{
     width: 150px; 
@@ -641,6 +654,7 @@ nav .ul li{
     border-radius: 50%;
     transform: rotate(190deg);
     margin-top: 50px;
+    display: none;
     }
 
 }
