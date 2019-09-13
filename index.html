@@ -22,29 +22,47 @@
 <body class="container">
     <section class="wrapper">
         <nav id="navbar" class="navbar container">
-            <ul>
-                <div class="navlist">
-                    <li id="img"><img class="img" src="./images/upshift.png"/></li>
-                    <span class="spanpb" style="display: inline-block">
-                        <div class="circle"></div><li><a id="personal" class="nav-link" href="#">Personal</a></li>
-                        <div id="circle2" class="circle"></div><li><a class="nav-link" href="#">Business</a></li>
-                    </span>
-                    <span class="contactspan" style="display: inline-block">
-                        <li><a class="nav-link" href="#">About</a></li>
-                        <li><a class="nav-link" href="#">Pricing</a></li>
-                        <li><a class="nav-link" href="#">FAQ</a></li>
-                        <li><a  class="nav-link" href="#">Contact Us</a></li>
-                    </span>
-                    <span class="loginspan" style="display: inline-block">
-                        <li><a class="nav-link" href="#">Log In</a></li>
-                        <div id="join"><li><a class="nav-link" href="#">Join now</a></li></div>
-                    </span>
-                </div>
-            </ul>
+            <div id="img" style="display: inline-block">
+                <img class="img" src="./images/upshift.png" />
+            </div>
+
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <div class="navlist">
+                <div class="ul">
+                    
+                        <span  >
+                            <div class="circle"></div><li><a id="personal" class="nav-link" href="#">Personal</a></li>
+                        </span>
+                        <span  >
+                            <div id="circle2" class="circle"></div><li><a id="business" class="nav-link" href="#">Business</a></li>
+                        </span>
+                        <span >
+                            <li><a class="nav-link" href="#">About</a></li>
+                        </span>
+                        <span >
+                                <li><a class="nav-link" href="#">Pricing</a></li>
+                        </span>
+                        <span >
+                            <li><a class="nav-link" href="#">FAQ</a></li>
+                        </span>
+                        <span >
+                                <li><a class="nav-link" href="#">Contact Us</a></li>
+                        </span >
+                        <span>
+                            <li><a class="nav-link" href="#">Log In</a></li>
+                        </span>
+                        <span >
+                            <div id="join"><li><a class="nav-link" href="#">Join now</a></li></div>
+                        </span>
+                        
+                    
+                    </div>
+            </div>
         </nav>
         <!-- <section class="space"></section> -->
         <section class="content-wrapper container ">
-            <div class="content-left">
+            <div class="content-left content">
                 <div class="content-left-text">
                     <p class="lead bold">Just drive.<br> We'll do the rest.</p>
                     <p id="small" class="lead small">All-inclusive, usage-based car subscriptions.</p>
@@ -54,7 +72,7 @@
                     <div class="search"><a href="#">Get Started</a></div>
                 </div>
             </div>
-            <div class="content-right">
+            <div class="content-right content">
                 <hr class="lines" id="line1">
                 <hr class="lines" id="line2">
                 <!-- <div class="lines" id="line1"></div>
@@ -85,7 +103,7 @@
         </div>
     </section>
     <section class="auto-fit banners-two container">
-        <div class="banners-two-left">    
+        <div class="banners-two-left banners-div">    
             <div class="banners-two-line">
                 <div class="lines-wrapper">
                     <!-- <hr class="lines2" id="line3">
@@ -117,7 +135,7 @@
                 </div>
             </div>
         </div>
-        <div class="banners-two-right">
+        <div class="banners-two-right banners-div">
                 <div class="bt-wrapper">
                     <div class="bt-title">
                         <p class="lead">01 <span id="bt-title-line" style="display: inline-block;"></span> ABOUT US </p>
@@ -152,16 +170,16 @@
         </div>
     </section>
     <section class="auto-fit how container">
-        <div id="how-t-work-left">
+        <div id="how-t-work-left" class="how-div">
             <div class="bt-title">
                 <p class="lead">02<span id="bt-title-line" style="display: inline-block;"></span> HOW IT WORKS</p>
             </div>
             <div  class="bt-header">
-                <p class="lead">Simple and handy rental process</p>
+                <p class="lead">Simple and <br>handy rental process</p>
             </div>
         </div>
 
-        <div id="how-t-work-mid" class="desc-text">
+        <div id="how-t-work-mid" class="desc-text how-div">
             <p class="lead">
                 Snow chains, surf board rack, key lock box, or <br>dog car seat hammock available upon request.
             </p>
@@ -178,7 +196,7 @@
                 </div>
             </div>
         </div>
-        <div id="how-t-work-right" class="desc-text">
+        <div id="how-t-work-right" class="desc-text how-div">
             <p class="lead">
                 Still got questions? We've probably covered<br> them all in the Help Center.
             </p>
