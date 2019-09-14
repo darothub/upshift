@@ -8,6 +8,8 @@
   .navlist{
     display: none;
     width: 100%;
+    /* background-color: red; */
+    
 }
 nav .ul li{
     text-decoration: none;
@@ -16,93 +18,111 @@ nav .ul li{
     margin-top: 5px;
     
 }
-   #toggle{
-        display: none;
-    } 
-    #toggle:checked + .navlist{
-        display: block;
-    } 
-    .navlist .ul{
-        display: block;
-        flex-direction: column;
-        
-    }
-    .navlist .ul span{
-        width: auto;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        border-bottom: 1px solid lightgray;
-    }
-    .navlist .ul span a{
-        font-size: 16px;
-        color: grey;
+.navlist .ul{
+    display: block;
+    flex-direction: column;
+    
+}
+#toggle{
+    display: none;
+} 
+#toggle:checked + #navlist{
+    display: block;
+} 
 
-    }
-    .wrapper{
-        display: flex;
-        flex-direction: column;
-    }
-    .content-wrapper{
-        display: flex;
-    }
-    .content-right{
-        display: none;
-    }
-    .content-left{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 40px;
-      
-    }
-    .bold{
-          font-size: 28px;
-    }
-    #small{
-        font-size: 14px;
-    }
+.navlist .ul span{
+    /* background-color: blue; */
+    display: block;
+    text-align: center;
+    /* margin: 0 auto; */
+    border-bottom: 1px solid lightgray;
+}
+.navlist .ul span a{
+    font-size: 16px;
+    color: grey;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.content-wrapper{
+    display: flex;
+}
+.content-right{
+    display: none;
+}
+.content-left{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.bold{
+        font-size: 28px;
+}
+#small{
+    font-size: 14px;
+}
 
-    .input input{
-        width: 100%;
-        height: 40px;
-        border: none;
-        background-color: transparent;
-    }
-    input:focus{
-        border: none;
-        outline: none;
-        background-color: transparent;
-    }
-    .input{
-        display: inline-block;
-        border-bottom: 1px solid lightgray;
-        width: 220px;
-        height: 70px;
-        padding: 22px 0;
-    }
+.input input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+}
+input:focus{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.input{
+    display: inline-block;
+    border-bottom: 1px solid lightgray;
+    width: 220px;
+    height: 70px;
+    padding: 22px 0;
+}
 
-    ::placeholder{
-        color: rgb(186, 187, 198);
-        text-align: center;
-    }
-    .search{
-        display: inline-block;
-        width: 150px;
-        height: 50px;
-        background-color: rgb(114, 115, 142);
-        border-radius: 140px;
-        margin: 10px auto;
-        text-align: center;
-    }
-    .search a{
-        color: #fff;
-        font-size: 16px;
-        line-height: 3em;
-        text-decoration: none;
-        display: block;
+::placeholder{
+    color: rgb(186, 187, 198);
+    text-align: center;
+}
+.search{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(114, 115, 142);
+    border-radius: 140px;
+    margin: 10px auto;
+    text-align: center;
+}
+.search a{
+    color: #fff;
+    font-size: 16px;
+    line-height: 3em;
+    text-decoration: none;
+    display: block;
 
-    }
+}
+.banners{
+    margin-top: 20px;
+    margin-bottom: 100px;
+  
+}
+
+.carousel-item img{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+#arrow{
+    text-align: center;
+}
+#curbed{
+   margin-top: -10px;
+}
+
 
 @media only screen and (min-width: 600px) {
     body{
@@ -309,6 +329,7 @@ nav .ul li{
     .banners div{
         display: inline-block;
         padding: 20px;
+        box-sizing: border-box;
 
     }
     .banners img{
