@@ -127,11 +127,14 @@ input:focus{
     z-index: 1;
     padding: 10px;
     box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "text text text"
+                                    "rating rating rating";
 
     /* grid-gap: -340px; */
 }
-#text-line{
-    display: none;
+.text-line{
+    grid-area: text;
 }
 .testimony #test-text{
     font-size:12px;
@@ -139,12 +142,13 @@ input:focus{
     margin-top: 10px;
     text-align: justify;
 }
-#rating #name{
-    width: 80px;
+#name{
+    width: auto;
+    grid-area: name;
     display:flex;
-    /* background-color: blue; */
-    flex: 1;
-    order: 1;
+    /* background-color: red; */
+    /* flex: 1;
+    order: 1; */
 }
 
 #name #x{
@@ -167,16 +171,18 @@ input:focus{
     color: #fff;
     letter-spacing: 0;
 }
-#rating{
+/* #rating{
     grid-column: 2;
-    display: flex;
+    display: grid;
+    width: 200px;
+    height: auto;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: red; */
-    /* grid-template-columns: 1fr;
+    background-color: red;
+    grid-template-columns: 1fr;
     grid-row: 2;
-    margin-left: 100px; */
-}
+    margin-left: 100px;
+} */
 #rating span{
     width: .5em;
 }
@@ -185,23 +191,31 @@ input:focus{
     flex-basis: 40%;
 }
 .review{
-    flex: 1;
-    order: 2;
+    grid-area: rating;
+    /* flex: 1; */
+    /* order: 2; */
+    width: 100%;
+    justify-content: space-between;
     /* background-color: blue; */
     height: auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas: "name star"
+                                    ". review";
+    /* flex-direction: column; */
 }
 .review #review-text{
-    margin-left: 35px;
-    margin-top: -5px;
-    font-size: 13px;
+    /* margin-left: 35px; */
+    grid-area: review;
+    margin-top: -10px;
+    font-size: 14px;
     color: #72738e;
 }
 #stars{
-    flex: 1;
+    grid-area: star;
+    text-align: right;
+    /* flex: 1; */
     /* background-color: green; */
-    margin-left: 75px;
+    /* margin-left: 75px; */
 }
 
 .banners-two-right{
