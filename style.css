@@ -347,7 +347,7 @@ input:focus{
         display: inline-block;
         width: auto;
         /* background-color: red; */
-        flex: 4;
+        flex: 8;
         /* background-color: red; */
         
     }
@@ -373,7 +373,7 @@ input:focus{
    
     }
     .img{
-        width: 100%;
+        width: 80px;
     }
     .navlist .ul{
         display: flex;
@@ -387,6 +387,23 @@ input:focus{
      } */
     .navbar-children{
         flex-basis: 40%;
+    }
+    
+    .ul span:nth-child(7){
+           margin-left: 10px;
+           background-color: 
+    }
+    #join{
+        width: 100px;
+        height: 40px;
+        background-color: #e7e8eb;
+        border-radius: 30px;
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    #join li{
+       margin-top: 0px;
+       margin-left: 5px;
     }
     .content-wrapper{
         display: flex;
@@ -464,7 +481,7 @@ input:focus{
         justify-content: center;
         align-items: center;
         grid-gap: 20px;
-        margin-top: 20px;
+        margin-top: 70px;
         padding: 10px 0;
         box-sizing: border-box;
 
