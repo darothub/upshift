@@ -22,20 +22,20 @@
 <body class="container">
     <section class="wrapper container">
         <nav id="navbar" class="navbar container">
-            <div id="img" style="display: inline-block">
+            <div id="img" class="navbar-children" style="display: inline-block">
                 <img class="img" src="./images/upshift.png" />
             </div>
 
             <label for="toggle">&#9776;</label>
             <input type="checkbox" id="toggle" />
-            <div id="navlist" class="navlist">
+            <div id="navlist" class="navlist class=navbar-children">
                 <div class="ul">
                     
-                        <span  >
-                            <div class="circle"></div><li><a id="personal" class="nav-link" href="#">Personal</a></li>
+                        <span id="personal" >
+                            <div class="circle"></div><li><a  class="nav-link" href="#">Personal</a></li>
                         </span>
-                        <span  >
-                            <div id="circle2" class="circle"></div><li><a id="business" class="nav-link" href="#">Business</a></li>
+                        <span  id="business">
+                            <div id="circle2" class="circle"></div><li><a  class="nav-link" href="#">Business</a></li>
                         </span>
                         <span >
                             <li><a class="nav-link" href="#">About</a></li>
@@ -73,14 +73,14 @@
                 </div>
             </div>
             <div class="content-right content">
-                <hr class="lines" id="line1">
-                <hr class="lines" id="line2">
-                <!-- <div class="lines" id="line1"></div>
-                <div class="lines" id="line2"></div> -->
+                <!-- <hr class="lines" id="line1">
+                <hr class="lines" id="line2"> -->
+                <div class="line-container">
+                    <div class="lines" id="line1"></div>
+                    <div class="lines" id="line2"></div>
+                </div>
             </div>
         </section>
-
-
     </section>
     <section class="banners container carousel slide" data-ride="carousel">
         <div class="carousel-item active">
@@ -102,7 +102,27 @@
             <i style="font-size:14px; font-weight: 100; color: #8889a0; line-height: 5em;" class="fa">&#xf063;</i>
         </div>
     </section>
-    <section class="auto-fit banners-two container">
+    <section class="banners-img container" >
+        <div >
+            <img src="./images/business.png">
+        </div>
+        <div >
+            <img src="./images/wired.png">
+        </div>
+        <div >
+            <img src="./images/urban.png">
+        </div>
+        <div>
+            <img src="./images/metro.png">
+        </div>
+        <div id="curbed">
+            <img src="./images/curbed.png">
+        </div>
+        <div id="arrow">
+            <i style="font-size:14px; font-weight: 100; color: #8889a0; line-height: 5em;" class="fa">&#xf063;</i>
+        </div>
+    </section>
+    <section class=" banners-two container">
         <div class="banners-two-left banners-div">    
             <div class="banners-two-line">
                 <div class="lines-wrapper">
@@ -122,7 +142,7 @@
                 <div id="rating">
                     <div class="review rating">
                         <div id="stars">
-                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span> 
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -139,26 +159,26 @@
             </div>
         </div>
         <div class="banners-two-right banners-div">
-                <div class="bt-wrapper">
-                    <div class="bt-title">
+                <div class="bt-wrapper ">
+                    <div class="bt-title bt-wrapper-div">
                         <p class="lead">01 <span id="bt-title-line" style="display: inline-block;"></span> ABOUT US </p>
                     </div>
-                    <div class="bt-header">
+                    <div class="bt-header bt-wrapper-div">
                         <p class="lead">Let's make cities better</p>
                     </div>
-                    <div class="desc-text">
+                    <div class="desc-text bt-wrapper-div">
                         <p class="lead">
                             Upshift is like having your own car at your doorstep, but only
                             the days you want it. Monthly plans based on how much you
-                            drive that include parking, insurance, maintenance and more. 
+                           drive  that include parking, insurance, maintenance and more. 
                         </p>
                         <p class="lead">
-                            We believe in using business to drive positive change in the
+                            We believe in using business to drive positive change in the 
                             world and never setting for what worked in the past.
                         </p>
                         <hr class="h">
-                        <div class="name2">
-                            <diV class="x2" style="display: inline-block"><p>x</p></diV>
+                        <div class="name2 about">
+                            <div class="x2" style="display: inline-block"><p>x</p></div>
                             <div class="name2-p" style="display: inline-block">
                                 <p class="lead">
                                     Interested in our values?
@@ -172,7 +192,7 @@
                 </div>
         </div>
     </section>
-    <section class="auto-fit how container">
+    <section class="how container">
         <div id="how-t-work-left" class="how-div">
             <div class="bt-title">
                 <p class="lead">02<span id="bt-title-line" style="display: inline-block;"></span> HOW IT WORKS</p>
@@ -183,15 +203,15 @@
         </div>
 
         <div id="how-t-work-mid" class="desc-text how-div">
-            <p class="lead">
-                Snow chains, surf board rack, key lock box, or <br>dog car seat hammock available upon request.
+            <p class="lead how-text-big">
+                Snow chains, surf board rack, key lock box, or dog car seat hammock available upon request.
             </p>
 
             <hr class="h">
-            <div class="name2">
-                <diV class="x2" style="display: inline-block">
+            <div class="name2 how-faq-check">
+                <div class="x2" style="display: inline-block">
                     <p>x</p>
-                </diV>
+                </div>
                 <div id="check-text" class="name2-p" style="display: inline-block">
                     <p id="checkp" class="lead">
                         Check the available accessories &rarr;
@@ -200,12 +220,12 @@
             </div>
         </div>
         <div id="how-t-work-right" class="desc-text how-div">
-            <p class="lead">
-                Still got questions? We've probably covered<br> them all in the Help Center.
+            <p class="lead how-text-big">
+                Still got questions? We've probably covered them  all in the Help Center.
             </p>
         
             <hr  class="h">
-            <div class="name2">
+            <div class="name2 how-faq-check">
                 <diV class="x2" style="display: inline-block">
                     <p>x</p>
                 </diV>
@@ -217,7 +237,7 @@
             </div>
         </div>
     </section>
-    <section class="auto-fit process container">
+    <section class="process container">
         <div class="pfirst-wrapper">
             <div class="process-first">
                 <div class="pfirst-circle-wrapper">
@@ -230,63 +250,60 @@
                         Text us
                     </p>
                     <p>
-                        Text when you want your car. <br> No app needed, just an online<br> account. Real human operators.
+                        Text when you want your car. No app needed, just an online account. Real human operators
                     </p>
                     <hr>
                 </div>
-               
+        
             </div>
         </div>
         <div class="curve"></div>
-        
         <div class="pfirst-wrapper">
             <div class="process-first">
                 <div class="pfirst-circle-wrapper">
-                    <diV class="x2" style="display: block">
+                    <div class="x2" style="display: inline-block">
                         <p>x</p>
-                    </diV>
+                    </div>
                 </div>
                 <div class="pfirst-text">
                     <p class="lead">
                         We deliver
                     </p>
                     <p>
-                        Your car will arrive at<br> your door - clean and<br> fully fueled.
+                        Your car will arrive at your door - clean and fully fueled.
                     </p>
                     <hr>
                 </div>
-                
-            </div>
-        </div> 
         
+            </div>
+        </div>        
         <div class="curve"></div>
         <div class="pfirst-wrapper">
             <div class="process-first">
                 <div class="pfirst-circle-wrapper">
-                    <diV class="x2" style="display: block">
+                    <div class="x2" style="display: inline-block">
                         <p>x</p>
-                    </diV>
+                    </div>
                 </div>
                 <div class="pfirst-text">
                     <p class="lead">
                         You drive
                     </p>
                     <p>
-                        Hop in and go with full coverage<br> insurance, FasTrak, phone accessories, and unlimited mileage.
+                        Hop in and go with full coverage insurance, FasTrak, phone accessories, and unlimited mileage.
                     </p>
                     <hr>
                 </div>
+        
             </div>
         </div>
-        
         <div class="curve"></div>
-        
         <div class="pfirst-wrapper">
             <div class="process-first">
                 <div class="pfirst-circle-wrapper">
-                    <diV class="x2" style="display: block">
+                    <div class="x2" style="display: inline-block">
                         <p>x</p>
-                    </diV>
+                    </div>
                 </div>
                 <div class="pfirst-text">
                     <p class="lead">
@@ -297,11 +314,9 @@
                     </p>
                     <hr>
                 </div>
-            
+        
             </div>
         </div>
-        
-
     </section>
     
 </body>
