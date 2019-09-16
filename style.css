@@ -338,6 +338,12 @@ input:focus{
     display: none;
 }
 @media only screen and (min-width: 600px) {
+    body{
+        background-color: white;
+    }
+    .wrapper{
+        background-color: rgb(245, 245, 247);
+    }
     .circle{
         display: inline-block;
         background-color: red;
@@ -435,6 +441,12 @@ input:focus{
     .content-left-text{
         /* background-color: red; */
         text-align: justify;
+
+    }
+    .bold{
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 1em;
     }
     .content-right{
         display: block;
@@ -446,6 +458,7 @@ input:focus{
         width: 200px;
         height: 200px;
         border: 2px solid  transparent; 
+        /* background-color: red; */
     }
     .lines{
         height: 2px;
@@ -500,6 +513,22 @@ input:focus{
         box-sizing: border-box;
 
     }
+    .banners-two-line{
+        width: 250px;
+        height: 350px;
+        display: grid;
+        background-color: rgb(245, 245, 247);
+    }
+    .line-container-two{
+        width: 120px;
+        height: 120px;
+        margin: 50px auto;
+    }
+    .testimony{
+        z-index: 2;
+        margin-left: 20px;
+        margin-top: -130px;
+    }
     .bt-wrapper-div .name2 .x2 p{
         line-height: 2.5em;
     }
@@ -541,7 +570,7 @@ input:focus{
     }
     .pfirst-wrapper{
         margin-top: 0px;
-        background-color: #f5f5f7;
+        /* background-color: #f5f5f7; */
         justify-content: start;
         align-items: start;
     }
@@ -550,7 +579,7 @@ input:focus{
         line-height: 2em;
     }
     .pfirst-wrapper:nth-child(3), .pfirst-wrapper:nth-child(7){
-        background-color: #f5f5f7;
+        /* background-color: #f5f5f7; */
         margin-top: 40px;
     }
     .curve:nth-child(4){
